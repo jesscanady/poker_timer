@@ -1,0 +1,60 @@
+body
+  background: #1C1C1C
+  color: #999
+
+@mixin chip 
+  text-align: center
+  height: 2em
+  border-radius: 1em
+  width: 2em
+  display: table-cell
+  margin-left: auto
+  margin-right: auto
+  vertical-align: middle
+  font-size: 5em
+  color: #000
+  font-family: Lobster
+
+
+table
+  margin-bottom: 0
+  td
+    vertical-align: middle
+    padding: 1em
+  td.blinds, td.timer
+    vertical-align: center
+    padding: 0 1em
+    h2
+      margin: 0
+
+#current_blinds, #current_time
+  font-size: 10em
+
+#chip1
+  @include chip
+  background-color: #c06
+
+
+#chip2
+  @include chip
+  background-color: #0c6
+
+#chip3
+  @include chip
+  background-color: #000
+  color: #fff
+
+#chip4
+  @include chip
+  // background-color: #c6c
+  background-color: #06c
+
+#paused, #begin
+  width: 70%
+  text-align: center
+  position: absolute
+  top: 25%
+  left: 14%
+  background: rgba(255,255,255,.5)
+  padding: 20px
+  border-radius: 20px

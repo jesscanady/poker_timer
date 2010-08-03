@@ -1,0 +1,29 @@
+#container
+  %table{:style => 'widtH: 100%'}
+    %tr
+      %td
+        #chip1 5
+      %td
+        #chip2 25
+      %td
+        #chip3 100
+      %td 
+        #chip4 500
+
+  %table{:style => 'width: 100%'}
+    %tr
+      %td.blinds
+        %h2 blinds
+        #current_blinds BLINDS 
+    %tr
+      %td.timer
+        %h2 time until increase
+        #current_time TIME LEFT
+      
+#paused{:style => 'display: none'}
+  %h1 GAME PAUSED
+  %h2 click to resume
+
+#begin
+  %h1 POKER NIGHT
+  %h2 click to begin

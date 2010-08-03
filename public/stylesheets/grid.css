@@ -1,0 +1,86 @@
+/*
+Syntax error: Invalid mixin "mixin 1kbgrid($num_columns = 12, $column_width = 60px, $gutter = 10px)".
+        on line 2 of /Users/jonc/code/poker_status/public/stylesheets/sass/grid.sass
+
+1: /* adaptation of The 1KB CSS Grid to sass (http://www.1kbgrid.com/). I love Sass.
+2: @mixin 1kbgrid($num_columns = 12, $column_width = 60px, $gutter = 10px)
+3:   // calculated values
+4:   $gutter_margin = $gutter / 2
+5:   $total_column_width = $column_width + $gutter
+6:   $row_width = $total_column_width * $num_columns
+7: 
+
+Backtrace:
+/Users/jonc/code/poker_status/public/stylesheets/sass/grid.sass:2
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:603:in `parse_mixin_definition'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:523:in `parse_directive'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:420:in `parse_line'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:320:in `build_tree'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:339:in `append_children'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:338:in `each'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:338:in `append_children'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:208:in `_to_tree'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:178:in `to_tree'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/haml/util.rb:249:in `silence_haml_warnings'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/engine.rb:178:in `to_tree'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/files.rb:44:in `tree_for'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/plugin.rb:221:in `update_stylesheet'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/plugin.rb:86:in `update_stylesheets'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/plugin.rb:79:in `each'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/plugin.rb:79:in `update_stylesheets'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/plugin.rb:77:in `each'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/plugin.rb:77:in `update_stylesheets'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/plugin.rb:51:in `check_for_updates'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/haml-3.0.12/lib/sass/plugin/rack.rb:40:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/flash.rb:177:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/cookies.rb:268:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/activerecord-3.0.0.rc/lib/active_record/query_cache.rb:32:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/activerecord-3.0.0.rc/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/activerecord-3.0.0.rc/lib/active_record/query_cache.rb:12:in `cache'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/activerecord-3.0.0.rc/lib/active_record/query_cache.rb:31:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/activesupport-3.0.0.rc/lib/active_support/callbacks.rb:410:in `_run_call_callbacks'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.0.rc/lib/rails/rack/logger.rb:13:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/activesupport-3.0.0.rc/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.0.rc/lib/rails/application.rb:168:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.0.rc/lib/rails/application.rb:77:in `send'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.0.rc/lib/rails/application.rb:77:in `method_missing'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.0.rc/lib/rails/rack/log_tailer.rb:15:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/jonc/.rvm/rubies/ruby-1.8.7-p299/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.0.rc/lib/rails/commands/server.rb:65:in `start'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.0.rc/lib/rails/commands.rb:30
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.0.rc/lib/rails/commands.rb:27:in `tap'
+/Users/jonc/.rvm/gems/ruby-1.8.7-p299/gems/railties-3.0.0.rc/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid mixin \"mixin 1kbgrid($num_columns = 12, $column_width = 60px, $gutter = 10px)\".\A         on line 2 of /Users/jonc/code/poker_status/public/stylesheets/sass/grid.sass\A \A 1: /* adaptation of The 1KB CSS Grid to sass (http://www.1kbgrid.com/). I love Sass.\A 2: @mixin 1kbgrid($num_columns = 12, $column_width = 60px, $gutter = 10px)\A 3:   // calculated values\A 4:   $gutter_margin = $gutter / 2\A 5:   $total_column_width = $column_width + $gutter\A 6:   $row_width = $total_column_width * $num_columns\A 7: "; }

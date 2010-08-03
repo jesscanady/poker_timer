@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title PokerStatus
+    = stylesheet_link_tag :flutie, 'screen', :cache => true 
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"
+    = javascript_include_tag "rails" 
+    = javascript_include_tag 'poker' 
+    = google_font_link_tag 'Lobster'
+    = csrf_meta_tag 
+  %body
+    = yield
